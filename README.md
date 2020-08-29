@@ -1,6 +1,6 @@
 # kaggle-osic
 Predicting prognosis in patients with pulmonary fibrosis.  
-![gifofimage]()
+![gifofimage](./imgs/sample.gif)
 #### What is pulmonary fibrosis?  
 [Pulmonary fibrosis](https://www.mayoclinic.org/diseases-conditions/pulmonary-fibrosis/symptoms-causes/syc-20353690) is a lung disease that occurs when lung tissue becomes damaged and scarred. This makes it more difficult for lungs to work properly.
 
