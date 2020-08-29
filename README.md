@@ -12,10 +12,12 @@ For each true FVC measurement, an FVC and a confidence measure (standard deviati
 
 The metric is computed as:  
 <img src="https://render.githubusercontent.com/render/math?math=\sigma_{clipped} = max(\sigma, 70),">
+<img src="https://render.githubusercontent.com/render/math?math=\Delta = min ( |FVC_{true} - FVC_{predicted}|, 1000 ),">
+<img src="https://render.githubusercontent.com/render/math?math=metric = -\frac{\sqrt{2} \Delta}{\sigma_{clipped}} - \ln ( \sqrt{2} \sigma_{clipped} ).">
 
   
-\Delta = min ( |FVC_{true} - FVC_{predicted}|, 1000 ),  
-metric = -   \frac{\sqrt{2} \Delta}{\sigma_{clipped}} - \ln ( \sqrt{2} \sigma_{clipped} ).
+
+
 
 
 
