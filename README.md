@@ -17,7 +17,12 @@ The metric is computed as follows:
   <img src="https://render.githubusercontent.com/render/math?math=metric = -\frac{\sqrt{2} \Delta}{\sigma_{clipped}} - \ln ( \sqrt{2} \sigma_{clipped} )">  
   where,
   <img src="https://render.githubusercontent.com/render/math?math=\sigma_{clipped} = max(\sigma, 70),"> and
-  <img src="https://render.githubusercontent.com/render/math?math=\Delta = min ( | FVC_{true} - FVC_{predicted} |, 1000 )">  
+  <img src="https://render.githubusercontent.com/render/math?math=\Delta = min (\Big|FVC_{true} - FVC_{predicted}\Big|, 1000 )">    
+  
+Predicting an FVC value with high error and low standard deviation leads to large penalties; while predicting with high standard deviation penalises less, relatively. The error is thresholded at 1000 ml to avoid large errors adversely penalising results, while the confidence values are clipped at 70 ml to reflect the approximate measurement uncertainty in FVC. The final score is calculated by averaging the metric across all test set Patient_Weeks (three per patient).
+The metric values will be negative and *higher* is better.
+
+  
 
 
   
