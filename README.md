@@ -13,10 +13,12 @@ FVC is the amount of air that can be forcibly exhaled from your lungs after taki
 The evaluation metric of this competition is a modified version of Laplace Log Likelihood. In medical applications, it is useful to evaluate a model's confidence in its decisions. Accordingly, the metric is designed to reflect both the accuracy and certainty of each prediction.  
 For each true FVC measurement, an FVC and a confidence measure (standard deviation σ) are predicted.   
 
-The metric is computed as:  
-<img src="https://render.githubusercontent.com/render/math?math=\sigma_{clipped} = max(\sigma, 70),">  
-<img src="https://render.githubusercontent.com/render/math?math=\Delta = min ( |FVC_{true} - FVC_{predicted}|, 1000 ),">  
-<img src="https://render.githubusercontent.com/render/math?math=metric = -\frac{\sqrt{2} \Delta}{\sigma_{clipped}} - \ln ( \sqrt{2} \sigma_{clipped} ).">  
+The metric is computed as follows:  
+  <img src="https://render.githubusercontent.com/render/math?math=metric = -\frac{\sqrt{2} \Delta}{\sigma_{clipped}} - \ln ( \sqrt{2} \sigma_{clipped} )">  
+  where,
+  <img src="https://render.githubusercontent.com/render/math?math=\sigma_{clipped} = max(\sigma, 70),"> and
+  <img src="https://render.githubusercontent.com/render/math?math=\Delta = min ( | FVC_{true} - FVC_{predicted} |, 1000 )">  
+
 
   
 
