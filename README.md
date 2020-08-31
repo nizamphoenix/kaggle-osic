@@ -26,13 +26,18 @@ Predicting an FVC value with high error and low standard deviation leads to larg
 
 Windowing, also known as grey-level mapping, contrast stretching, histogram modification or contrast enhancement is the process in which the CT image greyscale component of an image is manipulated via the CT numbers; doing this will change the appearance of the picture to highlight particular structures. The brightness of the image is adjusted via the window level. The contrast is adjusted via the window width.
 
-Window width
+Window width  
 The window width (WW) as the name suggests is the measure of the range of CT numbers that an image contains.
 
-A wider window width (2000 HU), therefore, will display a wider range of CT numbers. Consequently, the transition of dark to light structures will occur over a larger transition area to that of a narrow window width (<1000 HU).
+A wider window width (2000 HU), therefore, will display a wider range of CT numbers. Consequently, the transition of dark to light structures will occur over a larger transition area to that of a narrow window width (<1000 HU).  
 
-Accordingly, it is important to note, that a significantly wide window displaying all the CT numbers will result in different attenuations between soft tissues to become obscured 1.
-  
+Window level/centre
+The window level (WL), often also referred to as window centre, is the midpoint of the range of the CT numbers displayed.
+When the window level is decreased the CT image will be brighter and vice versa.  
+
+**Typical window width and level values for chest:**  
+- lungs W:1500 L:-600  
+- mediastinum W:350 L:50  
 
 
   
