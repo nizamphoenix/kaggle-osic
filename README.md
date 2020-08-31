@@ -24,6 +24,14 @@ The metric values will be negative and *higher* is better.
 
 Predicting an FVC value with high error and low standard deviation leads to large penalties; while predicting with high standard deviation penalises less, relatively. So, if you are confident that your predictions are perfect, you can set sigma to the minimal value so that the penalty of it is minimized.
 
+Windowing, also known as grey-level mapping, contrast stretching, histogram modification or contrast enhancement is the process in which the CT image greyscale component of an image is manipulated via the CT numbers; doing this will change the appearance of the picture to highlight particular structures. The brightness of the image is adjusted via the window level. The contrast is adjusted via the window width.
+
+Window width
+The window width (WW) as the name suggests is the measure of the range of CT numbers that an image contains.
+
+A wider window width (2000 HU), therefore, will display a wider range of CT numbers. Consequently, the transition of dark to light structures will occur over a larger transition area to that of a narrow window width (<1000 HU).
+
+Accordingly, it is important to note, that a significantly wide window displaying all the CT numbers will result in different attenuations between soft tissues to become obscured 1.
   
 
 
