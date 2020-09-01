@@ -22,7 +22,7 @@ The metric is computed as follows:
 The error is thresholded at 1000 ml to avoid large errors adversely penalising results, while the confidence values are clipped at 70 ml to reflect the approximate measurement uncertainty in FVC. The final score is calculated by averaging the metric across all test set Patient_Weeks (three per patient).
 The metric values will be negative and *higher* is better.   
 
-Predicting an FVC value with high error and low standard deviation leads to large penalties; while predicting with high standard deviation penalises less, relatively. So, if you are confident that your predictions are perfect, you can set sigma to the minimal value so that the penalty of it is minimized.
+Predicting an FVC value with high error and low standard deviation leads to large penalties; while predicting with high standard deviation penalises less, relatively. So, if you are confident that your predictions are perfect, you can set sigma to the minimal value so that the penalty is minimised.  
 
 Windowing, also known as grey-level mapping, contrast stretching, histogram modification or contrast enhancement is the process in which the CT image greyscale component of an image is manipulated via the CT numbers; doing this will change the appearance of the picture to highlight particular structures. The brightness of the image is adjusted via the window level. The contrast is adjusted via the window width.
 
