@@ -37,7 +37,11 @@ When the window level is decreased the CT image will be brighter and vice versa.
 
 **Typical window width and level values for chest:**  
 - lungs W:1500 L:-600  
-- mediastinum W:350 L:50  
+- mediastinum W:350 L:50    
+
+## EDA:-  
+![age](./imgs/age_dist.png)  
+The age 
 
 
   
