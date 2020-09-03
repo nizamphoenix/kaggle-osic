@@ -30,12 +30,12 @@ The *training* dataset provides a baseline chest CT scan(dicom files) and associ
 We predict the final three FVC measurements for each patient, as well as a confidence value in our prediction as stated above.  
 
 ### EDA:-  
-![age](./imgs/age_dist.png)  
-The age 
-![image.png](attachment:image.png)
+![image.png](./imgs/percent_violinplot.png)
+Percent is a value derived from FVC, it is patient's FVC expressed as a percent of the typical FVC for a person of similar characteristics, a relative value!  
 
 ### Misc:-  
-Windowing, also known as grey-level mapping, contrast stretching, histogram modification or contrast enhancement is the process in which the CT image greyscale component of an image is manipulated via the CT numbers; doing this will change the appearance of the picture to highlight particular structures. The brightness of the image is adjusted via the window level. The contrast is adjusted via the window width.
+##### Windowing  
+Also known as grey-level mapping, contrast stretching, histogram modification or contrast enhancement is the process in which the CT image greyscale component of an image is manipulated via the CT numbers; doing this will change the appearance of the picture to highlight particular structures. The brightness of the image is adjusted via the window level. The contrast is adjusted via the window width.
 
 Window width  
 The window width (WW) as the name suggests is the measure of the range of CT numbers that an image contains.
@@ -46,9 +46,15 @@ Window level/centre
 The window level (WL), often also referred to as window centre, is the midpoint of the range of the CT numbers displayed.
 When the window level is decreased the CT image will be brighter and vice versa.  
 
-**Typical window width and level values for chest:**  
+Typical window width and level values for chest:    
 - lungs W:1500 L:-600  
 - mediastinum W:350 L:50   
+
+##### Hounsfield Units  
+Also called CT number is a metric to guage permeability of X-rays or radiowaves in materials, and is used predominantly with CT scans since they work with X-rays. Materials that inhibit the passage of electromagnetic radiation are called radiodense or radiopaque(appear white/light gray on CT,ex:bones), while those that allow radiation to pass more freely are referred to as radiolucent(appear black/dark gray on CT,ex:tissue).   
+Distilled Water= 0  
+Air = −1000  
+Lung= −500   
 
   
 
