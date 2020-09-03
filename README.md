@@ -30,7 +30,7 @@ The *training* dataset provides a baseline chest CT scan(dicom files) and associ
 We predict the final three FVC measurements for each patient, as well as a confidence value in our prediction as stated above.  
 
 ### EDA:-  
-![image.png](./imgs/percent_violinplot.png)
+![image.png](./imgs/percent_violinplot.png)  
 Percent is a value derived from FVC, it is patient's FVC expressed as a percent of the typical FVC for a person of similar characteristics, a relative value!  
 
 ### Misc:-  
